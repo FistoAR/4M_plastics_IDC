@@ -41,7 +41,7 @@
 }
 
 .nav-toggle-btn:hover {
-    background: #fcb33e;
+    background: #B2201A;
     /* lighter green on hover */
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
 
@@ -164,8 +164,8 @@
 
 .toc-list a:hover,
 .toc-list a:focus {
-    color: #0c0c0c;
-    background: #fcb33e;
+    color: #fdfdfd;
+    background: #B2201A;
     /* dark green hover */
     transform: translateX(7px) scale(1.066);
 }
@@ -278,7 +278,7 @@
 }
 
 .share-btn:hover {
-    background: #fcb33e;
+    background: #B2201A;
     /* lighter green on hover */
     box-shadow: 0 6px 22px rgba(0, 0, 0, 0.35);
 }
@@ -447,8 +447,8 @@
 
 .home-button {
     position: fixed;
-    width: 42px;
-    height: 42px;
+    width: 55px;
+    height: 55px;
     right: 2%;
     top: 14%;
     padding: 0.43vw;
@@ -459,7 +459,7 @@
 }
 
 .home-button:hover {
-    background-color: #fcb33e;
+    background-color: #B2201A;
 }
 
 .bgm-container {
