@@ -557,3 +557,7 @@
     pointer-events: none;
     user-select: none;
 }
+
+.hidden-controls{
+    display: none;
+}
