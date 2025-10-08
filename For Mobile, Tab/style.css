@@ -656,6 +656,41 @@ body {
 }
 
 /* ************************************************************************************** page 01 ******************************************************************* */
+.back-top-wrapper {
+  position: fixed;
+  bottom: 8%;
+  right: 5%;
+  width: 55px;
+  height: 55px;
+  padding: 2.5px; /* This becomes the border thickness */
+  background: linear-gradient(to right, #000000, #000000);
+  border-radius: 50%;
+  z-index: 1000;
+  
+}
+
+.back-top-button {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.back-top-button i {
+  font-size: 24px;
+  background: linear-gradient(to right, #030303, #000000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.back-top-button:hover i {
+  opacity: 0.8;
+}
 
 
 

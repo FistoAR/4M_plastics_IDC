@@ -58,6 +58,34 @@
             pointer-events: none;
         }
 
+  /* Slow smooth logo animation */
+@keyframes logoPulse {
+  0% {
+    transform: scale(0.9);
+    opacity: 0.6;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.9);
+    opacity: 0.6;
+  }
+}
+
+.animate-logo {
+  animation: logoPulse 8s ease-in-out infinite; /* slower 4s cycle */
+}
+
+/* Fade-out effect */
+.fade-out {
+  opacity: 0;
+  transition: opacity 4s ease-out; /* smooth 2s fade */
+  pointer-events: none;
+}
+
+
     </style>
 </head>
 
@@ -69,9 +97,30 @@
 <!-- <div id="preloader" class="fixed inset-0 bg-white flex items-center justify-center z-50">
   <img src="./images/logo.png" alt="Logo" class="w-32 h-32 animate-logo">
 </div> -->
+<div id="preloader" class="fixed inset-0 bg-white flex items-center justify-center z-50">
+  <img src="./global assets/4M_Plastics_Images/4M_packs_logo.svg" alt="Logo" class="w-52 h-52 animate-logo">
+</div>
 
     <div id="content"></div>
 </body>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const preloader = document.getElementById("preloader");
+
+    // Keep preloader visible for a bit longer (e.g., 2.5 seconds)
+    setTimeout(() => {
+      preloader.classList.add("fade-out");
+
+      // Remove preloader from DOM after fade-out completes
+      setTimeout(() => {
+        preloader.style.display = "none";
+      }, 1000); // matches CSS transition time
+    }, 3000); // extra wait before fade starts
+  });
+</script>
+
+
 <script>
 //   const video = document.getElementById("preloader-video");
 //   const preloader = document.getElementById("preloader");
